@@ -5,9 +5,9 @@
 #
 ##############################################################
 
-#TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = '#COMMIT VERSION NUMBER'
-AESD_ASSIGNMENTS_SITE = '#GITHUB REPOSITORY LINK'
+#TODO: Fill up the contents below in order to reference your assignment 3 git contents - DONE
+AESD_ASSIGNMENTS_VERSION = 53b526f6c0fca7ec78e222a4506cfdf153d06254
+AESD_ASSIGNMENTS_SITE = https://github.com/cu-ecen-5013/aesd-assignments-3-and-later-MohitRane8
 AESD_ASSIGNMENTS_SITE_METHOD = git
 
 
@@ -18,6 +18,8 @@ endef
 #TODO: Add required executables or scripts below
 define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/writer $(TARGET_DIR)/bin
+	$(INSTALL) -m 0755 $(@D)/tester.sh $(TARGET_DIR)/bin
+	$(INSTALL) -m 0755 $(@D)/finder.sh $(TARGET_DIR)/bin
 endef
 
 
