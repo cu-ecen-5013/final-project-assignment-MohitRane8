@@ -13,7 +13,6 @@ define AESD_PROJECT_BUILD_CMDS
 	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D) all
 endef
 
-#TODO: Add required executables or scripts below
 define AESD_PROJECT_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/test_src/hello_world/hello_world $(TARGET_DIR)/bin
 endef
