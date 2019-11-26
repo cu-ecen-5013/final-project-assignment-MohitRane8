@@ -6,7 +6,7 @@
 ##############################################################
 
 AESD_PROJECT_VERSION = b3f9b7102e1a578906fd316460579d7d3d2e9760
-AESD_PROJECT_SITE = https://github.com/cu-ecen-5013/final-project-assignment-MohitRane8
+AESD_PROJECT_SITE = https://github.com/cu-ecen-5013/Mohit-Amogh-Final-ProjectSource
 AESD_PROJECT_SITE_METHOD = git
 
 define AESD_PROJECT_BUILD_CMDS
