@@ -5,9 +5,9 @@
 #
 ##############################################################
 
-AESD_PROJECT_VERSION = 6d2958faa22e30e51520c251a1c076201a626e63 
-# AESD_PROJECT_SITE = git@github.com:cu-ecen-5013/Mohit-Amogh-Final-ProjectSource.git
-AESD_PROJECT_SITE = https://github.com/cu-ecen-5013/Mohit-Amogh-Final-ProjectSource
+AESD_PROJECT_VERSION = 12521b2b09a811f10a35c1256e021a0707883825
+AESD_PROJECT_SITE = git@github.com:cu-ecen-5013/Mohit-Amogh-Final-ProjectSource.git
+# AESD_PROJECT_SITE = https://github.com/cu-ecen-5013/Mohit-Amogh-Final-ProjectSource
 AESD_PROJECT_SITE_METHOD = git
 
 define AESD_PROJECT_BUILD_CMDS
@@ -15,8 +15,7 @@ define AESD_PROJECT_BUILD_CMDS
 endef
 
 define AESD_PROJECT_INSTALL_TARGET_CMDS
-	# $(INSTALL) -m 0755 $(@D)/uls_sensor $(TARGET_DIR)/bin
-	$(INSTALL) -m 0755 $(@D)/led_blink $(TARGET_DIR)/bin
+	$(INSTALL) -m 0755 $(@D)/bbb_main $(TARGET_DIR)/bin
 endef
 
 $(eval $(generic-package))
